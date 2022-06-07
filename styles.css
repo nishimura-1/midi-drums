@@ -1,0 +1,29 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/leo.jpg);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drums {
+    display: flex;
+}
+
+.hit {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid #55524b;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+.hit.active {
+    background-color: #55524b;
+}
