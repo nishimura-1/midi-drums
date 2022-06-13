@@ -17,6 +17,7 @@ body {
 
 .drums {
     display: flex;
+    margin: auto;
 }
 
 .hit {
@@ -30,4 +31,24 @@ body {
 
 .hit.active {
     background-color: #55524b;
+}
+
+.keys {
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.key {
+    color: black;
+    margin: 0px 25px;
+    width: 100px;
+    height: 50px;
+    font-size: 1.2rem;
+}
+
+.drums-and-keys {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
