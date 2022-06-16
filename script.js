@@ -1,6 +1,6 @@
 const hitTriggers = ['z', 'x', 'c', 'v', 'b', 'n', 'm']
 
-const drums = document.querySelectorAll('.hit')
+const drums = document.querySelectorAll('.button')
 
 drums.forEach(drum => {
     drum.addEventListener('click', () => playDrum(drum))

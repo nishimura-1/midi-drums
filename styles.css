@@ -2,17 +2,30 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height:100%;
+}
+
 body {
-    background-image: url(images/coast.jpeg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    min-height: 100vh;
+    background: linear-gradient(-45deg, #1e1f26, #283655, #4d648d, #d0e1f9);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .drums {
@@ -20,18 +33,23 @@ body {
     margin: auto;
 }
 
-.hit {
+.button {
     width: 100px;
     height: 100px;
-    background-color: black;
-    border: 2px solid #55524b;
+    background-color: white;
     margin: 25px;
     border-radius: 50%;
 }
 
-.hit.active {
-    background-color: #55524b;
+.button:hover {
+    background-color: lightgray;
+    transition-duration: 0.2s;
 }
+
+.button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 .keys {
     display: flex;
@@ -40,11 +58,11 @@ body {
 }
 
 .key {
-    color: black;
+    color: white;
     margin: 0px 25px;
     width: 100px;
     height: 50px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .drums-and-keys {
@@ -52,3 +70,8 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+
+  
+
