@@ -23,6 +23,6 @@ function playDrum(drum) {
     })
 }
 
-// function pressButton() {
-//     button.classList.add('active');
-//  }
+function pressButton() {
+    button.classList.add('active');
+ }

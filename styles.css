@@ -39,8 +39,11 @@ body {
     width: 100px;
     height: 100px;
     background-color: white;
-    margin: 25px;
+    margin: 20px;
     border-radius: 10%;
+    font-size: 2.5rem;
+    color: #3d3d3d;
+    outline: none;
 }
 
 .button:hover {
@@ -48,33 +51,7 @@ body {
     transition-duration: 0.2s;
 }
 
-.button:active, .key:active {
-    transform: translateY(4px);
-  }
-
-.keys {
-    display: flex;
-    margin: auto;
-    text-align: center;
-    position: relative;
-    top: -96px;
-}
-
-.key {
-    color: darkgray;
-    margin: 0px 25px;
-    width: 100px;
-    height: 50px;
-    font-size: 2rem;
-}
-
-.drums-and-keys {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* .active, .key:active {
+.button:active, .active {
     transform: translateY(4px);
     background-color: lightgray;
-  } */
+  }
