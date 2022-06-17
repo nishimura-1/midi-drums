@@ -22,3 +22,7 @@ function playDrum(drum) {
         drum.classList.remove('active')
     })
 }
+
+// function pressButton() {
+//     button.classList.add('active');
+//  }
